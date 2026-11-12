@@ -1,0 +1,5 @@
+name = "diary-index"
+entry = "cli.py"
+spec = "diary-index"
+purpose = "Offline FTS5 search over a folder of markdown journals"
+health = "python3 cli.py stats"

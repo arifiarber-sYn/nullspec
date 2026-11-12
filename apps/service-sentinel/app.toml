@@ -1,0 +1,5 @@
+name = "service-sentinel"
+entry = "cli.py"
+spec = "service-sentinel"
+purpose = "Read-only health report for systemd user units and docker containers"
+health = "python3 cli.py --no-docker"

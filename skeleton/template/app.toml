@@ -1,0 +1,5 @@
+name = "{name}"
+entry = "main.py"
+spec = "{name}"
+purpose = "{purpose}"
+health = "python3 main.py --self-test"

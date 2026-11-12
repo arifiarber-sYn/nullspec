@@ -1,0 +1,13 @@
+{
+  "enabled": true,
+  "name": "Spec guard on stop",
+  "description": "Before the agent stops, every .kiro/specs folder must validate (required sections + acceptance criteria). Blocks half-written specs from landing.",
+  "version": "1",
+  "when": {
+    "type": "agentStop"
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "python3 -m nullspec spec check"
+  }
+}

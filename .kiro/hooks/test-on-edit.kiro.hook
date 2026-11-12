@@ -1,0 +1,14 @@
+{
+  "enabled": true,
+  "name": "Run tests on Python edit",
+  "description": "Any edit under skeleton/, apps/ or tests/ runs the stdlib test runner so a broken task never reaches a commit.",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": ["skeleton/**/*.py", "apps/**/*.py", "tests/**/*.py"]
+  },
+  "then": {
+    "type": "runCommand",
+    "command": "python3 tests/run_all.py"
+  }
+}
