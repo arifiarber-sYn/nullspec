@@ -30,6 +30,18 @@ No third-party packages. Python 3.11+ standard library only, so the demo runs an
 python3 -m nullspec spec list            # which specs exist and are valid
 python3 -m nullspec tasks --spec service-sentinel
 python3 -m nullspec tasks --spec service-sentinel --next
+python3 -m nullspec mcp --root .         # MCP stdio server: spec_list, task_next, spec_tasks
+```
+
+The MCP server speaks newline-framed JSON-RPC 2.0 on stdio, so Kiro (or any MCP client) can read
+the plan instead of guessing it:
+
+```bash
+printf '%s\n' \
+  '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{}}' \
+  '{"jsonrpc":"2.0","method":"notifications/initialized"}' \
+  '{"jsonrpc":"2.0","id":2,"method":"tools/call","params":{"name":"task_next","arguments":{"spec":"service-sentinel"}}}' \
+  | python3 -m nullspec.mcp --root .
 ```
 
 ## Kiro usage in this repo

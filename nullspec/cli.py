@@ -1,4 +1,4 @@
-"""CLI: `spec list`, `spec check`, `tasks`."""
+"""CLI: `spec list`, `spec check`, `tasks`, `new-app`, `mcp`."""
 
 from __future__ import annotations
 
@@ -76,6 +76,9 @@ def build_parser() -> argparse.ArgumentParser:
     tasks.add_argument("--json", action="store_true")
     tasks.add_argument("--root", default=".")
 
+    mcp = sub.add_parser("mcp", help="serve the spec plan over MCP (stdio)")
+    mcp.add_argument("--root", default=".")
+
     new = sub.add_parser("new-app", help="scaffold a new app from skeleton/template")
     new.add_argument("name")
     new.add_argument("--purpose", required=True)
@@ -89,4 +92,8 @@ def main(argv: list[str] | None = None) -> int:
         return _cmd_spec(args)
     if args.command == "new-app":
         return _cmd_new_app(args)
+    if args.command == "mcp":
+        from .mcp import serve
+
+        return serve(Path(args.root))
     return _cmd_tasks(args)
