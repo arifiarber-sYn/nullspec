@@ -1,7 +1,7 @@
 # nullspec — Kiroween 2026 submission draft
 
 **Category:** Best Skeleton Crew · **Bonus:** Best Demo (Presentation), Social Blitz
-**Repo:** `arifiarber-sYn/nullspec` (public + MIT in About) · **Video:** recorded 12.11.2026 — 112.8 s, 1280×720, 25 fps (`nullspec-demo.mp4`); YouTube upload pending
+**Repo:** https://github.com/arifiarber-sYn/nullspec (public, MIT detected on 19.11.2026) · **Video:** https://youtu.be/JEoc7i8EPQs — public, 1:53, 1280×720, 25 fps (uploaded 19.11.2026)
 **Built:** 11.11.2026 → 12.11.2026 (inside the 30.10–04.12 window) · **Team:** solo
 
 ---
@@ -78,3 +78,5 @@ python3 tests/run_all.py                          # 28 tests, OK
 > #KiroweenHackathon26 one skeleton, two apps, zero dependencies. `nullspec` keeps the plan in
 > `.kiro` specs, validates it, and serves it to Kiro over MCP — so the ledger and the code can't
 > drift. Built with @kirodotdev for #Kiroween.
+
+**Devpost submission:** id 1311991 (kiroween 2026) — overview + project details + additional info plotësuar 19.11.2026; mbetet pyetja «Kiroween 2025» dhe Submit.
