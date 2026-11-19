@@ -1,6 +1,6 @@
 # nullspec — Kiroween 2026 submission draft
 
-**Category:** Best Skeleton Crew · **Bonus:** Best Demo (Presentation), Social Blitz
+**Category:** Skeleton Crew · **Status:** SUBMITTED 19.11.2026 09:47 CET — https://devpost.com/software/nullspec (submission 1311991; editable until 04.12.2026 14:00 PT)
 **Repo:** https://github.com/arifiarber-sYn/nullspec (public, MIT detected on 19.11.2026) · **Video:** https://youtu.be/JEoc7i8EPQs — public, 1:53, 1280×720, 25 fps (uploaded 19.11.2026)
 **Built:** 11.11.2026 → 12.11.2026 (inside the 30.10–04.12 window) · **Team:** solo
 
@@ -64,8 +64,8 @@ python3 tests/run_all.py                          # 28 tests, OK
 - [x] Built with Kiro (CLI 3.1.0, Builder ID login verified 12.11.2026 00:16Z, `ENGINE_OK` turn).
 - [x] Working app URL — local CLI; demo video shows the real runs on this machine. No login needed to run.
 - [x] Text description of functions — this file.
-- [ ] Video demo < 3 min, public YouTube — **recorded 12.11.2026 (112.8 s, verified with ffprobe), upload pending**.
-- [ ] Public GitHub repo with MIT visible in About — **repo committed locally, publish pending**.
+- [x] Video demo < 3 min, public YouTube — uploaded 19.11.2026, https://youtu.be/JEoc7i8EPQs (oEmbed 200; 112.8 s, ffprobe).
+- [x] Public GitHub repo with MIT visible — https://github.com/arifiarber-sYn/nullspec (public, MIT, HTTP 200).
 - [x] `/.kiro` at repo root, not gitignored — tracked files: 2 specs, 2 hooks, 2 steering docs.
 - [x] Category + bonus declared — Skeleton Crew + Best Demo + Social Blitz.
 - [x] Two distinct apps under one skeleton — `apps/service-sentinel`, `apps/diary-index`.
