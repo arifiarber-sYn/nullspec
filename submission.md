@@ -80,3 +80,10 @@ python3 tests/run_all.py                          # 28 tests, OK
 > drift. Built with @kirodotdev for #Kiroween.
 
 **Devpost submission:** id 1311991 (kiroween 2026) — overview + project details + additional info plotësuar 19.11.2026; mbetet pyetja «Kiroween 2025» dhe Submit.
+
+## Judging access (added 21.11.2026 after Devpost message from Darren Zheng)
+
+- Live, read-only demo over the real code: https://fedora.taile7c077.ts.net:10000/nullspec/
+  (`demo/server.py` in this repo: spec validation, task ledger, MCP JSON-RPC, FTS5 search).
+- Repo contents needed to run it: `nullspec/`, `apps/`, `.kiro/`, `tests/`, `README.md` —
+  `git clone … && python3 tests/run_all.py` → 28 tests OK, stdlib only, no build step.

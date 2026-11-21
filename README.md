@@ -44,6 +44,18 @@ printf '%s\n' \
   | python3 -m nullspec.mcp --root .
 ```
 
+## Live demo (no install)
+
+A read-only HTTP front end over this same code — spec validation, task ledger, MCP over
+JSON-RPC and FTS5 search on a small synthetic journal:
+
+**https://fedora.taile7c077.ts.net:10000/nullspec/**
+
+It is the module in `demo/server.py` (`python3 demo/server.py --port 8095`), imports
+`nullspec.specs`, `nullspec.mcp` and `apps/diary-index` directly, writes nothing outside a
+temp index, and rate-limits to 40 requests/minute. If the tunnel is down, every command in
+**Use** above runs locally with no dependencies.
+
 ## Kiro usage in this repo
 
 - `.kiro/specs/*` — the specs were written first, in Kiro, before any code.
